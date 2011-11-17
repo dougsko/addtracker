@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "addtracker"
   gem.homepage = "http://github.com/dougsko/addtracker"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Adds a tracker to a torrent file.}
+  gem.description = %Q{Adds a tracker to a torrent file.}
   gem.email = "dougtko@gmail.com"
   gem.authors = ["Doug P."]
   # Include your dependencies below. Runtime dependencies are required when using your gem,

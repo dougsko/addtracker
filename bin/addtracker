@@ -11,7 +11,7 @@ if ARGV.size < 1
     exit
 end
 
-tracker = ARGV[1] or "http://tracker.publicbt.com/announce"
+tracker = ARGV[1] || "http://tracker.publicbt.com/announce"
 
 puts "Adding http://tracker.publicbt.com/announce..."
 Addtracker.new(ARGV[0], tracker)
