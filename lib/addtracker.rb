@@ -8,9 +8,7 @@ class Addtracker
     def initialize(torrent_file, tracker)
         @torrent_file = torrent_file
         @tracker = tracker
-        puts tracker
-        exit
-
+        
         t = BEncode.load_file(@torrent_file, 
                               opts = {:ignore_trailing_junk => true})
         t['announce-list'] << [@tracker]
