@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+#
+#
+# adds a tracker to a torrent
+#
+
+require 'addtracker'
+
+if ARGV.size < 1
+    puts "You must supply the path to a torrent file."
+    exit
+end
+
+tracker = ARGV[1] or "http://tracker.publicbt.com/announce"
+
+puts "Adding http://tracker.publicbt.com/announce..."
+Addtracker.new(ARGV[0], tracker)
+puts "Done."
